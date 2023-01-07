@@ -18,7 +18,7 @@ equity_comp = ['BTC', 'ETH']
 
 for a in equity_comp:
     try:
-        url = f'https://www.alphavantage.co/query?function=CRYPTO_INTRADAY&symbol={a}&market=USD&interval=30min&apikey=PJEBBJNC5XGIIA9J&outputsize=compact'
+        url = f'https://www.alphavantage.co/query?function=CRYPTO_INTRADAY&symbol={a}&market=USD&interval=30min&apikey=MHMHTFR8B2A6NZYD&outputsize=compact'
         r = requests.get(url)
         data = r.json()
 
@@ -53,7 +53,7 @@ time.sleep(60)
 equity_comp = ['BHP', 'RIO', 'GOLD', 'FCX',
                'VALE', 'ARKK', 'GS', 'AAPL', 'GOOG']
 for a in equity_comp:
-    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={a}&interval=30min&apikey=PJEBBJNC5XGIIA9J&outputsize=compact'
+    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={a}&interval=30min&apikey=MHMHTFR8B2A6NZYD&outputsize=compact'
     r = requests.get(url)
     data = r.json()
 
@@ -104,7 +104,7 @@ time.sleep(60)
 equity_comp = ['USD', 'EUR', 'GBP', 'NZD', 'CNY']
 for a in equity_comp:
     try:
-        url = f'https://www.alphavantage.co/query?function=FX_INTRADAY&from_symbol={a}&to_symbol=AUD&interval=30min&apikey=PJEBBJNC5XGIIA9J&outputsize=compact'
+        url = f'https://www.alphavantage.co/query?function=FX_INTRADAY&from_symbol={a}&to_symbol=AUD&interval=30min&apikey=MHMHTFR8B2A6NZYD&outputsize=compact'
         r = requests.get(url)
         data = r.json()
 
